@@ -25,6 +25,18 @@ $(document).ready(function() {
     
     element.find('[data-customer-address-section] [data-customer-address-city-paragraph]').text(data.address.city);
     element.find('[data-customer-address-section] [data-customer-address-city-input]').val(data.address.city);
+    
+    element.find('[data-customer-address-section] [data-customer-address-street-paragraph]').text(data.address.street);
+    element.find('[data-customer-address-section] [data-customer-address-street-input]').val(data.address.street);
+    
+    element.find('[data-customer-address-section] [data-customer-address-homeNumber-paragraph]').text(data.address.homeNumber);
+    element.find('[data-customer-address-section] [data-customer-address-homeNumber-input]').val(data.address.homeNumber);
+    
+    element.find('[data-customer-address-section] [data-customer-address-flatNumber-paragraph]').text(data.address.flatNumber);
+    element.find('[data-customer-address-section] [data-customer-address-flatNumber-input]').val(data.address.flatNumber);
+    
+    element.find('[data-customer-address-section] [data-customer-address-postCode-paragraph]').text(data.address.postCode);
+    element.find('[data-customer-address-section] [data-customer-address-postCode-input]').val(data.address.postCode);
 
     return element;
   }
