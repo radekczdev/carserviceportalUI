@@ -12,7 +12,7 @@
 
 <main class="crud container">
   <section class="datatable">
-    <h2>Add a new task</h2>
+    <h2>Client's data:</h2>
     <form
         class="datatable__row datatable__row--add"
         method="POST"
@@ -21,17 +21,33 @@
     >
       <fieldset class="datatable__row-section datatable__row-section--input-section">
         <label class="datatable__input-label">
-          Task name
+          Name
         </label>
-        <input type="text" name="title" placeholder="Insert a task name" required minlength="3">
+        <input type="text" name="name" placeholder="Client's name" required minlength="3">
       </fieldset>
 
       <fieldset class="datatable__row-section datatable__row-section--input-section">
         <label class="datatable__input-label">
-          Task surname
+          Surname
         </label>
-        <textarea name="surname" placeholder="Insert task content" required minlength="3"></textarea>
+        <textarea name="surname" placeholder="Client's surname" required minlength="3"></textarea>
       </fieldset>
+      
+      <fieldset class="datatable__row-section datatable__row-section--input-section">
+        <label class="datatable__input-label">
+          Email
+        </label>
+        <textarea name="email" placeholder="Client's email" required minlength="3"></textarea>
+      </fieldset>
+      
+      <fieldset class="datatable__row-section datatable__row-section--input-section">
+        <label class="datatable__input-label">
+          Phone Number
+        </label>
+        <textarea name="phoneNumber" placeholder="Client's phone Number" required minlength="3"></textarea>
+      </fieldset>
+      
+<!--       address and Cars list needed -->
 
       <fieldset class="datatable__row-section datatable__row-section--button-section">
         <button type="submit" data-task-add-button class="datatable__button">Add a task</button>
