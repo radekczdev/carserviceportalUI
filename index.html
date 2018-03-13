@@ -11,8 +11,9 @@
 <h1 class="kodilla-heading kodilla-heading--main">Car Service Portal</h1>
 
 <main class="crud container">
+  
   <section class="datatable">
-    <h2>Client's data:</h2>
+    <h2>New Client's data input</h2>
     <form
         class="datatable__row datatable__row--add"
         method="POST"
@@ -54,28 +55,48 @@
       </fieldset>
     </form>
   </section>
+  
   <section class="datatable">
-    <h2>Tasks from the API</h2>
+    <h2>Customers in database</h2>
     <div class="datatable__tasks-container" data-tasks-container></div>
   </section>
+  
 </main>
 
 <div class="template" data-datatable-row-template>
-  <form class="datatable__row" data-task-id="0">
-    <fieldset class="datatable__row-section datatable__row-section--input-section" data-task-name-section>
+  <form class="datatable__row" data-customer-id="0">
+    <fieldset class="datatable__row-section datatable__row-section--input-section" data-customer-name-section>
       <label class="datatable__input-label">
-        Task name
+        Name
       </label>
-      <input type="text" name="title" placeholder="Insert a new task name" data-task-name-input required minlength="3">
-      <p class="datatable__field-value" data-task-name-paragraph></p>
+      <input type="text" name="name" placeholder="Insert a new client's name" data-customer-name-input required minlength="3">
+      <p class="datatable__field-value" data-customer-name-paragraph></p>
     </fieldset>
 
-    <fieldset class="datatable__row-section datatable__row-section--input-section" data-task-content-section>
+    <fieldset class="datatable__row-section datatable__row-section--input-section" data-customer-surname-section>
       <label class="datatable__input-label">
-        Task content
+        Surname
       </label>
-      <textarea name="title" placeholder="Insert new task content" data-task-content-input required minlength="3"></textarea>
-      <p class="datatable__field-value" data-task-content-paragraph></p>
+      <textarea name="surname" placeholder="Insert new customer's surname" data-customer-surname-input required minlength="3"></textarea>
+      <p class="datatable__field-value" data-customer-surname-paragraph></p>
+    </fieldset>
+    
+    
+    <fieldset class="datatable__row-section datatable__row-section--input-section" data-customer-email-section>
+      <label class="datatable__input-label">
+        Email
+      </label>
+      <textarea name="surname" placeholder="Insert new customer's email" data-customer-email-input required minlength="3"></textarea>
+      <p class="datatable__field-value" data-customer-email-paragraph></p>
+    </fieldset>
+    
+    
+    <fieldset class="datatable__row-section datatable__row-section--input-section" data-customer-phoneNumber-section>
+      <label class="datatable__input-label">
+        Phone Number
+      </label>
+      <textarea name="phoneNumber" placeholder="Insert new customer's surname" data-customer-phoneNumber-input required minlength="3"></textarea>
+      <p class="datatable__field-value" data-customer-phoneNumber-paragraph></p>
     </fieldset>
 
     <fieldset class="datatable__row-section datatable__row-section--button-section">
