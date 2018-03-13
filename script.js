@@ -11,8 +11,8 @@ $(document).ready(function() {
     var element = $(datatableRowTemplate).clone();
 
     element.attr('data-task-id', data.id);
-    element.find('[data-task-name-section] [data-task-name-paragraph]').text(data.title);
-    element.find('[data-task-name-section] [data-task-name-input]').val(data.title);
+    element.find('[data-task-name-section] [data-task-name-paragraph]').text(data.name);
+    element.find('[data-task-name-section] [data-task-name-input]').val(data.name);
 
     element.find('[data-task-content-section] [data-task-content-paragraph]').text(data.surname);
     element.find('[data-task-content-section] [data-task-content-input]').val(data.surname);
