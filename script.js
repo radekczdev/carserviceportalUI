@@ -22,6 +22,9 @@ $(document).ready(function() {
     
     element.find('[data-customer-phoneNumber-section] [data-customer-phoneNumber-paragraph]').text(data.phoneNumber);
     element.find('[data-customer-phoneNumber-section] [data-customer-phoneNumber-input]').val(data.phoneNumber);
+    
+    element.find('[data-customer-address-section] [data-customer-address-city-paragraph]').text(data.address.city);
+    element.find('[data-customer-address-section] [data-customer-address-city-input]').val(data.adress.city);
 
     return element;
   }
