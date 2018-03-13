@@ -14,8 +14,8 @@ $(document).ready(function() {
     element.find('[data-task-name-section] [data-task-name-paragraph]').text(data.title);
     element.find('[data-task-name-section] [data-task-name-input]').val(data.title);
 
-    element.find('[data-task-content-section] [data-task-content-paragraph]').text(data.content);
-    element.find('[data-task-content-section] [data-task-content-input]').val(data.content);
+    element.find('[data-task-content-section] [data-task-content-paragraph]').text(data.surname);
+    element.find('[data-task-content-section] [data-task-content-input]').val(data.surname);
 
     return element;
   }
